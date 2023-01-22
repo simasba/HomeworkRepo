@@ -42,6 +42,8 @@ ul {
 }
 
 li {
+  display: flex;
+  align-items: center;
   border-bottom: 1px solid #ccc;
   padding: 10px;
 }
@@ -51,36 +53,12 @@ a {
   text-decoration: none;
 }
 
-li {
-  display: flex;
-  align-items: center;
-}
-
 img {
   width: 50px;
   margin-right: 10px;
   display: inline-block;
 }
 
-button {
-  display: inline-block;
-  padding: 0.5em 1em;
-  border: none;
-  border-radius: 4px;
-  background-color: green;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  margin-right: 10px;
-}
-
-button:hover {
-  background-color: darkgreen;
-}
-
-button:active {
-  background-color: seagreen;
-}
 
 body {
 	background: url("pictures/dogs.jpg") ;
@@ -89,4 +67,31 @@ body {
 nav {
 	margin-bottom: 20px;
 	margin-top: 20px;
+}
+
+.menu-b{
+  display: inline-block;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+
+  background-image: linear-gradient(to right, #16A085 0%, #ac8a05  51%, hsl(168, 92%, 24%)  100%);
+
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.8);
+}
+
+.menu-b:hover {
+  background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+}
+
+.menu-b:active {
+  background-color: seagreen;
+}
+
+.b5{
+  transform: rotate(10deg);
 }
