@@ -95,3 +95,84 @@ nav {
 .b5{
   transform: rotate(10deg);
 }
+
+.box {
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#box1{
+  background-color: red;
+}
+
+#box2{
+  background-color: rgb(32, 154, 142);
+}
+
+#box3{
+  background-color: rgb(160, 154, 52);
+}
+
+#box4{
+  background-color: rgb(6, 94, 45);
+}
+
+#box5{
+  background-color: rgb(91, 24, 114);
+}
+
+@keyframes animation1 {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+.animation1 {
+  animation-name: animation1;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes animation2 {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.5);}
+  100% {transform: scale(1);}
+}
+.animation2 {
+  animation-name: animation2;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes animation3 {
+  0% {transform: translateX(0px);}
+  50% {transform: translateX(200px);}
+  100% {transform: translateX(0px);}
+  
+}
+.animation3 {
+  animation-name: animation3;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes animation4 {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.animation4 {
+  animation-name: animation4;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes animation5 {
+  0% {transform: rotateY(0deg);}
+  100% {transform: rotateY(180deg);}
+}
+.animation5 {
+  animation-name: animation5;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
