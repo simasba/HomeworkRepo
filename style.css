@@ -1,6 +1,6 @@
-#header {
+header {
   background-color: #333;
-  color: white;
+  color: #fff;
   padding: 20px;
   text-align: center;
 }
@@ -17,18 +17,18 @@
   padding: 20px;
 }
 
-#content {
+main {
   overflow: auto;
   width: 1000px;
-  background-color: rgba(255,255,255,0.8);
+  background-color: #fff;
 }
 
-#footer {
+footer {
   clear: both;
   padding-bottom: 1em;
   border-top: 1px solid #333;
   text-align: center;
- }
+}
 
 h2 {
   color: #333;
@@ -59,40 +59,49 @@ img {
   display: inline-block;
 }
 
-
 body {
-	background: url("pictures/dogs.jpg") ;
+  background: url("pictures/dogs.jpg");
 }
 
 nav {
-	margin-bottom: 20px;
-	margin-top: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
-.menu-b{
+.menu-button {
   display: inline-block;
   padding: 0.5em 1em;
   border: none;
   border-radius: 10px;
-  color: white;
+  color: #fff;
   font-size: 16px;
   cursor: pointer;
   margin-right: 10px;
 
-  background-image: linear-gradient(to right, #16A085 0%, #ac8a05  51%, hsl(168, 92%, 24%)  100%);
+  background-image: linear-gradient(
+    to right,
+    #16a085 0%,
+    #ac8a05 51%,
+    #05765f 100%
+  );
 
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 8px 15px #000000cc;
 }
 
-.menu-b:hover {
-  background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+.menu-button:hover {
+  background-image: linear-gradient(
+    to right,
+    #f6d365 0%,
+    #fda085 51%,
+    #f6d365 100%
+  );
 }
 
-.menu-b:active {
-  background-color: seagreen;
+.menu-button:active {
+  background-color: #2e8b57;
 }
 
-.b5{
+.button5 {
   transform: rotate(10deg);
 }
 
@@ -103,29 +112,33 @@ nav {
   cursor: pointer;
 }
 
-#box1{
-  background-color: red;
+#box1 {
+  background-color: #f00;
 }
 
-#box2{
-  background-color: rgb(32, 154, 142);
+#box2 {
+  background-color: #209a8e;
 }
 
-#box3{
-  background-color: rgb(160, 154, 52);
+#box3 {
+  background-color: #a09a34;
 }
 
-#box4{
-  background-color: rgb(6, 94, 45);
+#box4 {
+  background-color: #065e2d;
 }
 
-#box5{
-  background-color: rgb(91, 24, 114);
+#box5 {
+  background-color: #5b1872;
 }
 
 @keyframes animation1 {
-  0% {transform: rotate(0deg);}
-  100% {transform: rotate(360deg);}
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .animation1 {
   animation-name: animation1;
@@ -134,9 +147,15 @@ nav {
 }
 
 @keyframes animation2 {
-  0% {transform: scale(1);}
-  50% {transform: scale(1.5);}
-  100% {transform: scale(1);}
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .animation2 {
   animation-name: animation2;
@@ -145,10 +164,15 @@ nav {
 }
 
 @keyframes animation3 {
-  0% {transform: translateX(0px);}
-  50% {transform: translateX(200px);}
-  100% {transform: translateX(0px);}
-  
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
 .animation3 {
   animation-name: animation3;
@@ -157,8 +181,12 @@ nav {
 }
 
 @keyframes animation4 {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .animation4 {
@@ -168,8 +196,12 @@ nav {
 }
 
 @keyframes animation5 {
-  0% {transform: rotateY(0deg);}
-  100% {transform: rotateY(180deg);}
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
 }
 .animation5 {
   animation-name: animation5;
