@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <form id="form">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required />
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required />
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="message"></div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $("#form").submit(function (event) {
+      event.preventDefault();
+
+      var email = $("#email").val();
+      var username = $("#username").val();
+      var password = $("#password").val();
+
+      if (!email || !username || !password) {
+        $("#message").html("<p>All fields are required.</p>");
+      } else {
+        $("#message").html("<p>Registration successful.</p>");
+      }
+    });
+  </script>
+</html>
